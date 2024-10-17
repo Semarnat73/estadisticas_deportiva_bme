@@ -73,7 +73,7 @@ int main() {
     w_r[8] = "Promedio de goles a favor por goles en contra: ";
     
     //Pedir datos
-    cout << "\tEstadisticas de Futbol (Soccer)Si \n"<< endl;
+    cout << "\tEstadisticas de Futbol (Soccer) \n"<< endl;
     cout << "1. Demo con datos pre-cargados" << endl;
     cout << "2. Calcular estadisticas con datos nuevos" << endl;
 
