@@ -40,13 +40,13 @@ int main() {
 
     //Datos de la Demo
     name[0] = "Puebla (Liga MX - Apertura 2024)";
-     dat_entrada [0][1]=3; // victorias
-     dat_entrada [0][2]=2; // Empates
-     dat_entrada [0][3]=7; //Perdidos 
-     dat_entrada [0][4]=18; // Goles a favor 
-     dat_entrada [0][5]=43; //Goles en contra
-     dat_entrada [0][0]=12; //Partidos jugados
-     dat_entrada [0][6]=11; //Puntos obtenidos
+    dat_entrada [0][1]=3; // victorias
+    dat_entrada [0][2]=2; // Empates
+    dat_entrada [0][3]=7; //Perdidos 
+    dat_entrada [0][4]=18; // Goles a favor 
+    dat_entrada [0][5]=43; //Goles en contra
+    dat_entrada [0][0]=12; //Partidos jugados
+    dat_entrada [0][6]=11; //Puntos obtenidos
      
      
     
@@ -73,7 +73,7 @@ int main() {
     w_r[8] = "Promedio de goles a favor por goles en contra: ";
     
     //Pedir datos
-    cout << "\tEstadisticas de Futbol \n"<< endl;
+    cout << "\tEstadisticas de Futbol (Soccer)Si \n"<< endl;
     cout << "1. Demo con datos pre-cargados" << endl;
     cout << "2. Calcular estadisticas con datos nuevos" << endl;
 
@@ -89,7 +89,7 @@ int main() {
 
     if (i_a==1){
         for(int i = 0; i < 8; i++){
-            cout << w_q[0];
+            cout << w_q[i];
 
             if (i == 0){    
                 cin >> name[1];}
@@ -109,17 +109,17 @@ int main() {
 
     if (i_a == 0){
         cout << "\n\tDatos de la demo \n" << endl;
-        for (int i = 0; i < 7; i++){
-            cout << w_q[i+1] << dat_entrada[i_a][i] << endl;
+        for (int j = 0; j < 7; j++){
+            cout << w_q[j+1] << dat_entrada[i_a][j] << endl;
         }
     }
     //Imprimir resultados en consola
-    for(int i; i<9; i++){
+    for(int k; k<9; k++){
         
-        if(i == 0 ){
-            cout << w_r[i] << name[i_a] << endl;
+        if(k == 0 ){
+            cout << w_r[k] << name[i_a] << endl;
         } else{ 
-        cout << w_r[i]<< data_procesada[i_a][i-1] << endl;}
+        cout << w_r[k]<< data_procesada[i_a][k-1] << endl;}
     }
 
     return 0;
